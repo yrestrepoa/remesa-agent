@@ -1,0 +1,39 @@
+{
+  "name": "remesa-agent",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI agent that picks the best moment to send USDC remittances to Colombia, with escrow on Stellar.",
+  "main": "index.ts",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "start": "tsx index.ts",
+    "start:managed": "tsx ProcessManager.ts",
+    "chat": "tsx index.ts --chat",
+    "dev": "tsx watch index.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "test": "node --import tsx --test \"tests/**/*.test.ts\"",
+    "pm:test-webhook": "tsx ProcessManager.ts --test-webhook"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "1.1.0",
+    "chalk": "^6.0.1",
+    "cli-table3": "^0.6.5",
+    "dotenv": "^18.0.9",
+    "figlet": "^1.12.0",
+    "moment": "^2.31.0",
+    "openai": "7.43.0",
+    "redis": "^6.3.1",
+    "winston": "^3.19.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  }
+}

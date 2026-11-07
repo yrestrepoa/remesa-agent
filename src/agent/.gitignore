@@ -1,0 +1,13 @@
+node_modules/
+dist/
+logs/
+*.log
+
+.env
+.env.*
+!.env.example
+
+.pm.pid
+.pm.status.json
+boots.runtime.json
+CRITICAL_FAILURE.txt
