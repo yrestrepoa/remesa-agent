@@ -238,13 +238,6 @@ Guion sugerido:
 5. La mamá recibe el mensaje con el monto en pesos.
 6. (Extra) Caso de vencimiento → reembolso automático.
 
-## 🏆 Por qué encaja en la hackathon
-
-- **Reutiliza** el proyecto *Remesa Express* del playbook (escrow + envío de USDC) y le suma la capa de **agente**, sin empezar de cero.
-- Usa piezas nativas de Stellar: **Soroban**, **USDC**, **SDEX/pathPayment** y **anchors**.
-- Resuelve un problema real con usuarios concretos.
-- El agente es **seguro por diseño**: autonomía limitada por el contrato.
-
 ## 🗺️ Roadmap
 
 - [ ] Contrato de escrow con tope y vencimiento
