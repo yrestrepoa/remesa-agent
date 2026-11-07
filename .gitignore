@@ -26,3 +26,5 @@ rustc-ice-*.txt
 # Variables de entorno
 .env
 .env.local
+
+node_modules/
